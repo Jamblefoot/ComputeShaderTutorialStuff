@@ -54,7 +54,7 @@ Shader "Custom/QuadParticle" {
 		float4 frag(v2f i) : COLOR
 		{
 			fixed4 color = tex2D(_MainTex, i.uv) * i.color;
-			return i.color;
+			return color;
 		}
 
 
